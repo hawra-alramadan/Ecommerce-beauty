@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Lato:wght@100;400&family=Merriweather:wght@300;400&display=swap');
+
 :root{
 
 }
@@ -17,26 +18,40 @@ body{
     width: 100%;
 }
 
+h1{
+    font-size: 2.2rem;
+    color: #000;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.4rem;
+}
+
+h5{
+    font-size: 1.25rem;
+}
+
+h6{
+    font-size: 1.1rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
 a{
     text-decoration: none;
 }
+
 /* -----header-----*/
 
-#logo{
-
-   width: 4rem;
-   
-}
-
-#header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.25rem 5rem;
-    background-color:#fbc1c4;
-    border-bottom: 1px solid white;
-    max-height: 4rem;
-}
 
 .topbar{
     min-height: 1.25rem;
@@ -44,17 +59,36 @@ a{
     display: flex;
     text-align: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color:rgba(246,184,199,255);
+    color: rgb(255, 255, 255);
     text-transform: capitalize;
     word-spacing: 2px;
 }
+
+#header{
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 7rem;
+    max-height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: #0000002c solid 1px;
+    position: sticky;
+}
+
+#logo{
+
+    width: 4rem;
+    cursor: pointer;
+ }
+
 .navbar{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-
 
 }
 
@@ -66,26 +100,29 @@ a{
 }
 
 .navbar li a{
+    font-family: 'Lato', sans-serif;
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .navbar li a:hover,
 .navbar li a.active{
-
     transition: 0.3s ease;
+    color: rgb(97, 97, 97);
 }
 
-.navbar li a.active::after,
-.navbar li a:hover::after{
+.navbar li a.active::after{
     content: "";
     width: 30%;
     height: 2px ;
     position: absolute;
-    bottom: -2px;
+    bottom: -4px;
     left: 20px;
+    background-color: rgba(246,184,199,255);
 }
 
 .icons-nav a{
@@ -93,3 +130,68 @@ a{
     color: black;
 }
 
+/* -----wrapper-----*/
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.wrapper .left{
+    background-color: rgb(255, 245, 245);
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.wrapper .right{
+    position: relative;
+    width: 65%;
+    background-image: url('images/female-models-smile-gladfully-tilt-heads-apply-beauty-patches-eyes-enjoys-skin-care-procedures-dressed-white-soft-bathrobes-isolated-pink.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .caption {
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    left: 10%;
+}
+
+.wrapper .caption h4{
+    padding-bottom: 1rem;
+}
+.wrapper .caption h1 {
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: rgb(95, 95, 95);
+}
+
+.wrapper .caption p{
+    padding-bottom: 2rem;
+    color:rgb(255, 193, 100);
+}
+
+.wrapper .caption .button {
+    background: #000;
+     border-radius: 2%;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: 0.3s ease;
+}
+
+.wrapper .caption .button:hover {
+    background: rgba(246,184,199,255);
+    color: #000;
+}
