@@ -213,7 +213,7 @@ a{
 
 .features .fe-box{
     font-family: 'Merriweather', serif;
-    width: 13rem;
+    width: 14rem;
     min-height: 12rem;
     text-align: center;
     padding: 1.6rem 2rem;
@@ -233,4 +233,75 @@ a{
 
 .features .fe-box p{
     font-weight: 400;
+}
+
+/* -----categories section-----*/
+
+
+.categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ca-box{
+    overflow: hidden;
+}
+
+.categories .ca-box .image-box {
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 2s;
+}
+
+.categories .ca-box .image-box:hover{
+    transform: scale(1.05);
+}
+
+.categories .ca-box .image-box .circle{
+    width: 7rem;
+    height: 7rem;
+    background-color: #000;
+    margin: 10% auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories .ca-box  .image-box .circle a{
+    width: inherit;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.categories .ca-box  .image-box .circle:hover{
+    background-color: rgba(246,184,199,255);
+    color: #000;
+}
+
+.categories .hair{
+    background-image: url('images/hair-cosmetics.jpg');
+}
+
+.categories .skin{
+    background-image: url('images/skin-cosmetics.jpg');
+}
+
+.categories .lipstick{
+    background-image: url('images/lipstick-cosmetics.jpg'); 
+}
+
+.skin,
+.hair,
+.lipstick{
+    background-position: center;
+    background-size: cover;
 }
