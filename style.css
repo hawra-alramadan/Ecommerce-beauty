@@ -50,6 +50,10 @@ a{
     text-decoration: none;
 }
 
+.section{
+    padding: 2.5rem 5rem;
+}
+
 /* -----header-----*/
 
 
@@ -166,6 +170,7 @@ a{
 .wrapper .caption h4{
     padding-bottom: 1rem;
 }
+
 .wrapper .caption h1 {
     font-family: 'Merriweather', serif;
     text-transform: uppercase;
@@ -183,7 +188,6 @@ a{
      border-radius: 2%;
     color: #fff;
     padding: 1rem 2rem;
-    text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
@@ -194,4 +198,39 @@ a{
 .wrapper .caption .button:hover {
     background: rgba(246,184,199,255);
     color: #000;
+}
+
+/* -----features section-----*/
+
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features .fe-box{
+    font-family: 'Merriweather', serif;
+    width: 13rem;
+    min-height: 12rem;
+    text-align: center;
+    padding: 1.6rem 2rem;
+}
+
+.features .fe-box img{
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.features .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    color: #000;
+    font-weight: 600;
+}
+
+.features .fe-box p{
+    font-weight: 400;
 }
