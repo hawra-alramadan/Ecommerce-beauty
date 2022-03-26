@@ -81,7 +81,7 @@ a{
     position: sticky;
 }
 
-#logo{
+.logo{
 
     width: 4rem;
     cursor: pointer;
@@ -507,3 +507,77 @@ a{
 
 /* -----fotter-----*/
 
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+}
+
+footer .logo{
+    margin-bottom: 1.87rem;
+}
+
+footer h4{
+    font-size: 0.9rem;
+    padding-bottom: 1.25rem;
+}
+
+footer p{
+    font-size: 0.81rem;
+    margin: 0 0 0.5rem 0;
+}
+
+footer a{
+    font-size: 0.81rem;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 00.61rem;
+}
+
+footer .follow{
+    margin-top: 1.25rem;
+}
+
+footer .follow .svg-inline--fa{
+    font-size: 1.5rem;
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+} 
+
+footer .follow .svg-inline--fa:hover,
+footer a:hover{
+    color: rgba(246,184,199,255);
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+footer .install  img{
+    margin: 0.61rem 0 0.93rem 0;
+}
+
+footer .copyright{
+    text-align: center;
+    width: 100%;
+ }
+
+ footer .copyright .author a{
+ font-size: 14px;
+  font-weight:800;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  }
