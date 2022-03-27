@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce beauty</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsive.css">
     <script src="https://kit.fontawesome.com/4c94f24f7a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,21 +17,31 @@
 
     <div class="topbar">free shipping within the continental us at 100$ and more.any purchase during sales period& discounted items are final sale.</div>
     <header id="header">
-       
-            <a href=""><img src="images/beauty-logo.svg" alt="beauty" class="logo"></a>
+
+            <a href="index.html"><img src="images/beauty-logo.svg" alt="beauty" class="logo"></a>
+            <div>
+                
+            </div>
            <nav>
-              <ul class="navbar">
+              <ul id="navbar" class="navbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                   <li><a href="index.html" class="active">home</a></li>
                   <li><a href="shop.html">shop</a></li>
                   <li><a href="blog.html">blog</a></li>
                   <li><a href="about.html">about us</a></li>
                   <li><a href="contact.html">contact</a></li>
+                  <li><a href=""><i  class="fa-solid fa-magnifying-glass  icons-nav"></i></a></li>
+                  <li><a href="" ><i class="fa-solid fa-bag-shopping  icons-nav"></i></a></li>
+                  <li><a href=""><i class="fa-solid fa-user  icons-nav"></i></a></li>
                 </ul> 
             </nav> 
            <div class="icons-nav">
             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="" ><i class="fa-solid fa-bag-shopping"></i></a>
             <a href=""><i class="fa-solid fa-user"></i></a>
+           </div>
+           <div id="mobile">
+              <i id="bar" class="fas fa-outdent" onclick="openNav()"></i> 
            </div>
     </header>
     <!--------------------wrapper---------------------->
@@ -194,7 +205,42 @@
     </div>
 
 
-    
+    <!--------------------grid section----------------------->
+
+
+    <div class="grid section">
+            <div class="child-box blue">
+                <div class="g-content">
+                    <h4>Healthy skin is a reflection of overall wellness.</h4>
+                    <img class="Round" src="images/pexels-anna-shvets-5069397.jpg" alt="">
+                </div>
+            </div>
+            <div class="child-box green ">
+                <div class="g-content">
+                    <h4>Loving your skin isn’t vanity, it’s sanity.</h4>
+                </div>
+            </div>
+            <div class="child-box bk">
+                <div class="g-content "></div>
+            </div>
+            
+            <div class="child-box yellow grid-col-span-2">
+                <div class="g-content">
+                    <h4>Happiness is a habit. So is your skincare.</h4>
+                    <img  class="Round" src="images/positive-joyful-woman-applies-nutrient-green-mask-face-has-daily-hygienic-routine-does-morning-beauty-procedures-laughs-happily-has-healthy-glowing-skin-wrapped-bath-towel-stands-indoor.jpg" alt="">
+                </div>
+            </div> 
+           
+            <div class="child-box bink">
+                <div class="g-content">
+                    <p>Say good morning to your skin with this enchanting treat.</p>
+                    <a class="button" href="#">shop now</a>
+                </div>
+             </div>
+              <div class="child-box bk1 ">
+                <div class="g-content"></div>
+            </div>
+    </div>
 
     <!--------------------Newsletters section ----------------------->
 
@@ -260,5 +306,7 @@
             <p class="author">(c)<a href="https://github.com/hawra-alramadan"> Hawra AL Ramadan </a>2022.</p>
           </div>
       </footer>
+
+      <script src="script.js"></script>
 </body>
 </html>

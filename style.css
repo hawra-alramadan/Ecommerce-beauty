@@ -133,6 +133,18 @@ a{
     color: black;
 }
 
+.closebtn{
+    display: none;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+li .icons-nav{
+    display: none;
+}
 /* -----wrapper-----*/
 
 
@@ -369,7 +381,7 @@ a{
 
 .product1 .pro{
     width: 23%;
-    min-height: 15.5rem;
+    min-width: 15.5rem;
     padding: 0.65rem 0.75rem;
     border: 1px solid #cce7d0;
     border-radius: 1.3rem;
@@ -440,6 +452,109 @@ a{
     color: #0fa89e;
     background-color: #d2f0d7;
     
+}
+
+
+/* -----grid section-----*/
+
+.grid{
+    display: grid;
+    align-self:start;
+    position: relative;
+    height: 99vh;
+    gap: 1rem; 
+    grid-template-columns:  repeat(4, 1fr);
+    grid-template-rows: repeat(6,1fr);
+
+}
+
+.grid > :nth-child(1),
+.grid > :nth-child(4){
+    grid-column: span 2;
+}
+
+.grid > :nth-child(1){
+    grid-row: span 3;
+}
+
+.grid > :nth-child(4){
+    grid-row: span 4;
+}
+
+
+
+.grid > :nth-child(2),
+.grid > :nth-child(3){
+    grid-row: span 2;
+}
+
+.grid > :nth-child(5),
+.grid > :nth-child(6){
+    grid-row: span 3;
+}
+
+.grid .child-box{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.bk{
+    background-image: url('images/pexels-anna-shvets-3852142.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.bk1{
+    background-image: url('images/pexels-shiny-diamond-3762408.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.child-box .g-content img{
+    width: 15rem;
+    position: relative;
+}
+
+.child-box .g-content .Round{
+    border-radius: 50%;
+}
+
+.child-box .g-content .button {
+    background: #000;
+     border-radius: 2%;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: 0.3s ease;
+}
+
+.child-box .g-content .button:hover {
+    background: rgba(246,184,199,255);
+    color: #000;
+}
+
+.blue{
+    background-color: #e9f2fa;
+}
+
+.green{
+    background-color: #f5f7fa;
+}
+
+.bink{
+    background-color: #fbeced;
+}
+
+.yellow{
+    background-color: #fef9e6;
+}
+
+.gray{
+    background-color: rgb(230, 230, 230);
 }
 
 
