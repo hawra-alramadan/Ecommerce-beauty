@@ -231,7 +231,7 @@ li .icons-nav{
 }
 
 .features .fe-box img{
-    width: 40%;
+    width: 30%;
     margin-bottom: 10px;
 }
 
@@ -252,8 +252,9 @@ li .icons-nav{
 .categories{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .ca-box{
@@ -266,7 +267,7 @@ li .icons-nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 2s;
+    transition: 0.3s ease;
 }
 
 .categories .ca-box .image-box:hover{
@@ -377,6 +378,7 @@ li .icons-nav{
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 1.25rem;
+    gap: 1rem;
 }
 
 .product1 .pro{
@@ -387,7 +389,7 @@ li .icons-nav{
     border-radius: 1.3rem;
     cursor: pointer;
     margin: 0.9rem 0;
-    transition: 0.2s ease;
+    transition: 0.3s ease;
     position: relative;
 }
 
@@ -496,6 +498,43 @@ li .icons-nav{
 .grid .child-box{
     border-radius: 5px;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.grid .child-box .g-content{
+    
+    position: relative;
+}
+
+.child-box .g-content img{
+    position: absolute;
+}
+
+.child-box .g-content .Round{
+    border-radius: 50%;
+}
+
+.blue .g-content{
+    top: 15%;
+    left: 15%;
+    text-align: left;
+}
+
+.blue .g-content img{
+    width: 14rem;
+    height: 14rem;
+    right: 30%;
+    top: 95%;
+}
+
+.green .g-content{
+    text-align: center;
+    top: 40%;
+}
+
+.green .g-content h4{
+    font-size: 2ch;
+    margin: 0 0.85rem ;
 }
 
 .bk{
@@ -505,19 +544,15 @@ li .icons-nav{
     background-repeat: no-repeat;
 }
 
-.bk1{
-    background-image: url('images/pexels-shiny-diamond-3762408.jpg');
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-.child-box .g-content img{
-    width: 15rem;
-    position: relative;
+.pink .g-content {
+    text-align: left;
+    top: 15%;
 }
 
-.child-box .g-content .Round{
-    border-radius: 50%;
+.pink .g-content h4{
+    margin: 1.5rem 0.85rem ;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .child-box .g-content .button {
@@ -525,6 +560,7 @@ li .icons-nav{
      border-radius: 2%;
     color: #fff;
     padding: 0.5rem 1rem;
+    margin: 1.5rem 0.85rem ;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
@@ -537,6 +573,29 @@ li .icons-nav{
     color: #000;
 }
 
+.bk1{
+    background-image: url('images/pexels-shiny-diamond-3762408.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.yellow .g-content{
+    text-align: left;
+    top: 15%;
+}
+
+.yellow .g-content p{
+    font-size: 2.5ch;
+    margin: 0 10%;
+}
+
+.yellow .g-content img{
+    width: 20rem;
+    top: 110%;
+    left: 6%
+}
+
 .blue{
     background-color: #e9f2fa;
 }
@@ -545,7 +604,7 @@ li .icons-nav{
     background-color: #f5f7fa;
 }
 
-.bink{
+.pink{
     background-color: #fbeced;
 }
 

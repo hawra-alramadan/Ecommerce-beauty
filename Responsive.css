@@ -1,5 +1,22 @@
+@media screen and (max-width:1170px){
+    #header{
+        padding: 1.25rem 3rem;
+    }
+
+    .wrapper .caption {
+        width: 80%;
+    }
+}
 
 @media screen and (max-width:899px) {
+    .topbar{
+       display: none;
+    }
+
+    #header{
+        top: 0;
+    }
+
     #header .navbar {
         display: flex;
         flex-direction: column;
@@ -52,6 +69,30 @@
         padding-left: 1.25rem;
     }
 
+    .wrapper{
+        min-height: 70vh;
+    }
+
+    .features{
+        justify-content: center;
+    }
+
+    .features .fe-box{
+       gap: 1.5rem;
+    }
+
+    .categories{
+        justify-content: center;
+    }
+    
+    .Highlight .caption{
+        width: 80%;
+    }
+    .product1 .pro-container{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
     .grid{
         display: grid;
         height:unset ;
@@ -67,6 +108,7 @@
     grid-row: unset !important;
     grid-column: unset !important;
    }
+
     .grid .child-box{
       min-height: 300px;
     }
