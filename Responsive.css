@@ -33,6 +33,7 @@
         padding: 5rem 0 0.62rem;
         transition: 0.5s;
     }
+
     .navbar li{
         margin-bottom: 1.56rem;
     }
@@ -84,10 +85,15 @@
     .categories{
         justify-content: center;
     }
-    
+
+    .Highlight{
+        min-height: 60vh;
+    }
+
     .Highlight .caption{
         width: 80%;
     }
+
     .product1 .pro-container{
         justify-content: center;
         gap: 1.5rem;
@@ -111,6 +117,140 @@
 
     .grid .child-box{
       min-height: 300px;
+      overflow: hidden;
+    }
+
+    .grid .child-box .g-content{
+        font-size: 1rem;
+      }
+  
+    .blue .g-content{
+        top: 15%;
+        left: unset;
+        text-align: center;
+    }
+    
+    .blue .g-content img{
+        width: 10rem;
+        height: 10rem;
+        right: 20%;
+        top: 100%;
+    }
+
+    .pink .g-content{
+        text-align: center;
+    }
+    
+    .yellow .g-content{
+        text-align: center;
+        top: 15%;
+    }
+    
+    .yellow .g-content img{
+        width: 8rem;
+    }
+    
+    .Newsletters .form{
+        width: 70%;
+        padding: 1rem 0;
+    }
+
+}
+
+@media screen and (max-width:699px){
+
+    .section{
+        padding: 2rem 3rem;
+    }
+
+    .wrapper .caption h4{
+        font-size: 1.4rem;
+    }
+    
+    .wrapper .caption h1 {
+       font-size: 2rem;
+    }
+
+    .wrapper .caption h2 {
+        font-size: 1.8rem;
+     }
+    
+    .wrapper .left{
+        width: 45%;
+    }
+    
+    .wrapper .right{
+        width: 55%;
+    }
+
+    .categories .ca-box .image-box {
+        width: 21rem;
+        height: 21rem;
+    }
+    
+    .categories .ca-box .image-box .circle{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .blue .g-content img{
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .yellow .g-content img{
+        width: 7rem;
+        top: 100%;
+    }
+}
+
+@media screen and (max-width:477px){
+
+    .section{
+        padding: 2rem ;
+    }
+
+    #header{
+        padding: 0.85rem 2.5rem;
+    }
+
+    .wrapper .caption h4{
+        font-size: 1.1rem;
+    }
+    
+    .wrapper .caption h1 {
+       font-size: 1.5rem;
+    }
+
+    .wrapper .caption h2 {
+        font-size: 1.3rem;
+     }
+
+    .wrapper .caption .button {
+        padding: 0.5rem 1rem;
+    }
+
+    .categories .ca-box .image-box {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .blue .g-content img{
+        right: 30%;
+    }
+
+    .yellow .g-content img{
+        width: 5rem;
+        left: 40%
+    }
+
+        .Newsletters{
+        padding: 2.6rem 1.25rem;
+    }
+
+    .Newsletters .form{
+        width: 100%;
+        padding: 1rem 0;
     }
 
 }

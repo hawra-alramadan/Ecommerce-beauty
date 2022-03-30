@@ -11,6 +11,7 @@
 
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -23,7 +24,7 @@ h1{
 }
 
 h2{
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h3{
@@ -322,7 +323,7 @@ li .icons-nav{
 
 
 .Highlight{
-    min-height: 40rem;
+    min-height: 70vh;
     background-image:linear-gradient(rgba(0, 0, 0, 0.281),rgba(0, 0, 0, 0.527)),url('images/Highlighted-cosmetic.jpg');
     background-size:cover ;
     background-position: center;
@@ -336,7 +337,6 @@ li .icons-nav{
 
 .Highlight .caption h2{
     color: rgb(255, 255, 255);
-    font-size: 2rem;
     font-family: 'Merriweather', serif;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
@@ -506,6 +506,11 @@ li .icons-nav{
     position: relative;
 }
 
+.grid.child-box .g-content .p{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
 .child-box .g-content img{
     position: absolute;
 }
@@ -520,11 +525,15 @@ li .icons-nav{
     text-align: left;
 }
 
+.blue .g-content p{
+    font-size: 3ch;
+}
+
 .blue .g-content img{
     width: 14rem;
     height: 14rem;
-    right: 30%;
-    top: 95%;
+    right: 20%;
+    top: 50%;
 }
 
 .green .g-content{
@@ -532,9 +541,9 @@ li .icons-nav{
     top: 40%;
 }
 
-.green .g-content h4{
-    font-size: 2ch;
+.green .g-content p{
     margin: 0 0.85rem ;
+    font-size: 2ch;
 }
 
 .bk{
@@ -544,16 +553,16 @@ li .icons-nav{
     background-repeat: no-repeat;
 }
 
-.pink .g-content {
+.pink .g-content{
     text-align: left;
+}
+
+.pink .g-content p{
+    margin: 2rem 0.85rem ;
+    font-size: 2.5ch;
     top: 15%;
 }
 
-.pink .g-content h4{
-    margin: 1.5rem 0.85rem ;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
 
 .child-box .g-content .button {
     background: #000;
@@ -591,7 +600,7 @@ li .icons-nav{
 }
 
 .yellow .g-content img{
-    width: 20rem;
+    width: 16rem;
     top: 110%;
     left: 6%
 }
@@ -650,6 +659,7 @@ li .icons-nav{
     display: flex;
     width: 40%;
 }
+
 .Newsletters input{
     min-height: 3.125rem;
     padding: 0 1.25rem;
@@ -754,4 +764,43 @@ footer .copyright{
   word-spacing: 4px;
   letter-spacing: 1px;
   color: rgb(0, 0, 0);
+  }
+
+
+
+  /* -----------------------------------------shop page-----------------------------------------*/
+
+  .page-header{
+    background-image: url('images/header-bk.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0.875rem;
+  }
+
+  .page-header h2,
+  .page-header p{
+      color: #fff;
+      text-transform: capitalize;
+  }
+
+  .pagination{
+      text-align: center;
+  }
+
+  .pagination a{
+      background-color: rgba(246,184,199,255);
+      color: #fff;
+      padding: 0.9rem 1.25rem;
+      font-weight: 600;
+  }
+
+  .pagination a .fa-arrow-right{
+      font-size: 0.9rem;
+      font-weight: 600;
   }
