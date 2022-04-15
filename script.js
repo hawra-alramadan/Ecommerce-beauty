@@ -7,3 +7,11 @@ function openNav() {
   function closeNav() {
     document.getElementById("navbar").style.width = "0";
   }
+
+
+  function myFunction(imgs) {
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementById("small-img");
+    MainImg.src = imgs.src;
+  }
+  

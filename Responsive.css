@@ -6,6 +6,8 @@
     .wrapper .caption {
         width: 80%;
     }
+
+
 }
 
 @media screen and (max-width:899px) {
@@ -155,6 +157,13 @@
         padding: 1rem 0;
     }
 
+    .prodetales .single-pro-img{
+        width: 50%;
+      }
+
+      .prodetales .single-pro-details{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:699px){
@@ -202,6 +211,9 @@
         width: 7rem;
         top: 100%;
     }
+    
+
+
 }
 
 @media screen and (max-width:477px){
@@ -253,4 +265,17 @@
         padding: 1rem 0;
     }
 
+    .prodetales{
+        display: flex;
+       flex-direction: column;
+    }
+
+    .prodetales .single-pro-img{
+        width: 100%;
+        margin-right: 0rem ;
+      }
+
+      .prodetales .single-pro-details{
+        width: 100%;
+    }
 }
