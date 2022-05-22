@@ -262,7 +262,7 @@
         left: 40%
     }
 
-        .Newsletters{
+    .Newsletters{
         padding: 2.6rem 1.25rem;
     }
 
@@ -304,7 +304,26 @@
        width: 100%;
    }
 
-   .contact-details{
+   .about-head{
+   flex-direction: column;
+}
+
+.about-head img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.about-head div{
+    padding-left: 0;
+    width: 100%;
+}
+
+.about-app .video{
+    width: 100%;
+}
+
+
+.contact-details{
    flex-direction: column;
 }
 
@@ -322,4 +341,15 @@
     width: 100%;
 }
 
+.cart-add{
+    flex-direction: column;
+}
+
+.coupon{
+    width: 100%;
+}
+
+.subtotal{
+    width: 100%;
+}
 }
