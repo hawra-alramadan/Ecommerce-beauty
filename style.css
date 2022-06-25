@@ -129,6 +129,22 @@ a{
     background-color: rgba(246,184,199,255);
 }
 
+.icons-nav a:hover,
+.icons-nav a.active{
+    transition: 0.3s ease;
+    color: rgb(97, 97, 97);
+}
+
+.icons-nav a .active::after{
+    content: "";
+    width: 30%;
+    height: 2px ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    background-color: rgba(246,184,199,255);
+} 
+
 .icons-nav a{
     padding: 1.25rem;
     color: black;
