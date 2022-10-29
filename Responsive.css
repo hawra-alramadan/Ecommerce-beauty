@@ -191,11 +191,11 @@
      }
     
     .wrapper .left{
-        width: 45%;
+        width: 60%;
     }
     
     .wrapper .right{
-        width: 55%;
+        width: 40%;
     }
 
     .categories .ca-box .image-box {
@@ -237,7 +237,7 @@
     }
     
     .wrapper .caption h1 {
-       font-size: 1.5rem;
+       font-size: 1.3rem;
     }
 
     .wrapper .caption h2 {
